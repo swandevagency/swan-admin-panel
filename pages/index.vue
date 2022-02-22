@@ -96,8 +96,6 @@ input.login-password {
   &:focus {
     border: none;
     outline: none;
-  }
-  &:hover {
     box-shadow: 0 0 0 5px $shiny-gold-50;
   }
   &::placeholder {
