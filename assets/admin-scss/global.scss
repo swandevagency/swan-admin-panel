@@ -1,0 +1,473 @@
+@import "./helpers/_variables.scss";
+
+//#region SF UI font
+@font-face {
+  font-family: 'SF UI';
+  font-style : normal;
+  font-weight: 400;
+  src        : url('/fonts/SF UI/woff/SFUIText-Regular.woff') format('woff'), url('/fonts/SF UI/ttf/SFUIText-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'SF UI';
+  font-style : italic;
+  font-weight: 400;
+  src        : url('/fonts/SF UI/woff/SFUIText-RegularItalic.woff') format('woff'), url('/fonts/SF UI/ttf/SFUIText-RegularItalic.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'SF UI';
+  font-style : normal;
+  font-weight: 300;
+  src        : url('/fonts/SF UI/woff/SFUIText-Light.woff') format('woff'), url('/fonts/SF UI/ttf/SFUIText-Light.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'SF UI';
+  font-style : italic;
+  font-weight: 300;
+  src        : url('/fonts/SF UI/woff/SFUIText-LightItalic.woff') format('woff'), url('/fonts/SF UI/ttf/SFUIText-LightItalic.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'SF UI';
+  font-style : normal;
+  font-weight: 500;
+  src        : url('/fonts/SF UI/woff/SFUIText-Medium.woff') format('woff'), url('/fonts/SF UI/ttf/SFUIText-Medium.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'SF UI';
+  font-style : italic;
+  font-weight: 500;
+  src        : url('/fonts/SF UI/woff/SFUIText-MediumItalic.woff') format('woff'), url('/fonts/SF UI/ttf/SFUIText-MediumItalic.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'SF UI';
+  font-style : normal;
+  font-weight: 600;
+  src        : url('/fonts/SF UI/woff/SFUIText-Semibold.woff') format('woff'), url('/fonts/SF UI/ttf/SFUIText-Semibold.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'SF UI';
+  font-style : italic;
+  font-weight: 600;
+  src        : url('/fonts/SF UI/woff/SFUIText-SemiboldItalic.woff') format('woff'), url('/fonts/SF UI/ttf/SFUIText-SemiboldItalic.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'SF UI';
+  font-style : normal;
+  font-weight: 700;
+  src        : url('/fonts/SF UI/woff/SFUIText-Bold.woff') format('woff'), url('/fonts/SF UI/ttf/SFUIText-Bold.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'SF UI';
+  font-style : italic;
+  font-weight: 700;
+  src        : url('/fonts/SF UI/woff/SFUIText-BoldItalic.woff') format('woff'), url('/fonts/SF UI/ttf/SFUIText-BoldItalic.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'SF UI';
+  font-style : normal;
+  font-weight: 800;
+  src        : url('/fonts/SF UI/woff/SFUIText-Heavy.woff') format('woff'), url('/fonts/SF UI/ttf/SFUIText-Heavy.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'SF UI';
+  font-style : italic;
+  font-weight: 800;
+  src        : url('/fonts/SF UI/woff/SFUIText-HeavyItalic.woff') format('woff'), url('/fonts/SF UI/ttf/SFUIText-HeavyItalic.ttf') format('truetype');
+}
+
+//#endregion
+// #region IRANSans
+@font-face {
+  font-family: IRANSans;
+  font-style : normal;
+  font-weight: bold;
+  src        : url("/fonts/IRANSans/IRANSansWeb_Bold.eot");
+  src        : url("/fonts/IRANSans/IRANSansWeb_Bold.eot?#iefix") format("embedded-opentype"),
+    /* IE6-8 */
+    url("/fonts/IRANSans/IRANSansWeb_Bold.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/
+    url("/fonts/IRANSans/IRANSansWeb_Bold.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url("/fonts/IRANSans/IRANSansWeb_Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style : normal;
+  font-weight: 500;
+  src        : url("/fonts/IRANSans/IRANSansWeb_Medium.eot");
+  src        : url("/fonts/IRANSans/IRANSansWeb_Medium.eot?#iefix") format("embedded-opentype"),
+    /* IE6-8 */
+    url("/fonts/IRANSans/IRANSansWeb_Medium.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/
+    url("/fonts/IRANSans/IRANSansWeb_Medium.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url("/fonts/IRANSans/IRANSansWeb_Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style : normal;
+  font-weight: 300;
+  src        : url("/fonts/IRANSans/IRANSansWeb_Light.eot");
+  src        : url("/fonts/IRANSans/IRANSansWeb_Light.eot?#iefix") format("embedded-opentype"),
+    /* IE6-8 */
+    url("/fonts/IRANSans/IRANSansWeb_Light.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/
+    url("/fonts/IRANSans/IRANSansWeb_Light.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url("/fonts/IRANSans/IRANSansWeb_Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style : normal;
+  font-weight: 200;
+  src        : url("/fonts/IRANSans/IRANSansWeb_UltraLight.eot");
+  src        : url("/fonts/IRANSans/IRANSansWeb_UltraLight.eot?#iefix") format("embedded-opentype"),
+    /* IE6-8 */
+    url("/fonts/IRANSans/IRANSansWeb_UltraLight.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/
+    url("/fonts/IRANSans/IRANSansWeb_UltraLight.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url("/fonts/IRANSans/IRANSansWeb_UltraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style : normal;
+  font-weight: normal;
+  src        : url("/fonts/IRANSans/IRANSansWeb.eot");
+  src        : url("/fonts/IRANSans/IRANSansWeb.eot?#iefix") format("embedded-opentype"),
+    /* IE6-8 */
+    url("/fonts/IRANSans/IRANSansWeb.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/
+    url("/fonts/IRANSans/IRANSansWeb.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url("/fonts/IRANSans/IRANSansWeb.ttf") format("truetype");
+}
+
+// #endregion
+// #region material design icons font
+@font-face {
+  font-family: 'Material Icons';
+  font-style : normal;
+  src        : url('/fonts/material-design-icons-font/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Material Icons Outlined';
+  font-style : normal;
+  src        : url('/fonts/material-design-icons-font/MaterialIconsOutlined-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Material Icons Round';
+  font-style : normal;
+  src        : url('/fonts/material-design-icons-font/MaterialIconsRound-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Material Icons Sharp';
+  font-style : normal;
+  src        : url('/fonts/material-design-icons-font/MaterialIconsSharp-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Material Icons Two Tone';
+  font-style : normal;
+  src        : url('/fonts/material-design-icons-font/MaterialIconsTwoTone-Regular.otf') format('opentype');
+}
+
+// #endregion
+* {
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "SF UI", Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  * {
+    transition: background-color $duration-30, color $duration-30, border $duration-30, outline $duration-30, fill $duration-30;
+  }
+
+  &.light {
+    @include spread-map($light-theme)
+  }
+
+  &.dark {
+    @include spread-map($dark-theme)
+  }
+}
+
+::selection {
+  color           : white;
+  background-color: $traditional-gold-color;
+}
+
+button,
+input,
+textarea,
+a,
+select {
+  cursor          : pointer;
+  text-decoration : none;
+  border          : none;
+  outline         : none;
+  font-family     : inherit;
+  background-color: white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border : none;
+    outline: none;
+  }
+}
+
+button {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+a.nuxt-link-exact-active span.material-icon {
+  color: $golden-orange;
+}
+
+a {
+  &:hover {
+    span.material-icon {
+      color: $light-coral-black-50;
+    }
+  }
+}
+
+img {
+  width     : 100%;
+  height    : 100%;
+  object-fit: contain;
+}
+
+body {
+  background-color: $coconut-milk;
+  min-height      : 100vh;
+}
+
+table {
+  width           : 100%;
+  background-color: white;
+  border-radius   : $xs-border-radius;
+  box-shadow      : $xs-smooth-shadow;
+  border-collapse : collapse;
+
+  thead {
+    background-color: whitesmoke;
+    position        : sticky;
+    top             : 0;
+    z-index         : 1;
+  }
+
+  th {
+    color      : $light-coral-black;
+    font-weight: 400;
+    font-size  : $xs-font-size;
+    padding    : 22px 36px 26px;
+    position   : relative;
+
+    &::after {
+      content         : "";
+      position        : absolute;
+      right           : 0;
+      width           : 1px;
+      background-color: $coral-black-15;
+      top             : $std-white-space;
+      bottom          : $std-white-space;
+    }
+
+    &:first-child {
+      color      : $golden-orange;
+      font-weight: 500;
+    }
+
+    &:last-child::after {
+      content: none;
+    }
+  }
+
+  tbody {
+    padding : 12px 0;
+    overflow: auto;
+
+    tr {
+      position : relative;
+      isolation: isolate;
+      cursor   : pointer;
+
+      &::after {
+        content         : "";
+        position        : absolute;
+        top             : 0;
+        bottom          : 0;
+        left            : 0;
+        right           : 0;
+        z-index         : -1;
+        transition      : box-shadow $duration-30, background-color $duration-30;
+        background-color: $coral-black-00;
+        pointer-events  : none;
+      }
+
+      &:hover::after {
+        background-color: $coral-black-05;
+      }
+
+      &:last-child::after {
+        border-bottom-right-radius: $xs-border-radius;
+        border-bottom-left-radius : $xs-border-radius;
+      }
+    }
+  }
+
+  tr {
+    &:first-child td {
+      padding-top: 36px;
+    }
+
+    &:last-child td {
+      padding-bottom: 36px;
+    }
+  }
+
+  td {
+    color      : $light-coral-black;
+    font-size  : $xs-font-size;
+    font-weight: 300;
+    padding    : 12px 36px;
+  }
+
+  th,
+  td {
+    text-align: left;
+  }
+}
+
+// #region material icons styles
+.material-icon {
+  font-weight   : normal;
+  font-style    : normal;
+  color         : $light-coral-black;
+  font-size     : 36px;
+  user-select   : none;
+  cursor        : pointer;
+  display       : inline-block;
+  line-height   : 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap     : normal;
+  white-space   : nowrap;
+  direction     : ltr;
+  transition    : color $duration-15;
+
+  &.i-xs {
+    font-size: 24px;
+  }
+
+  &.i-sm {
+    font-size: 36px;
+  }
+
+  &.i-md {
+    font-size: 48px;
+  }
+
+  &.i-lg {
+    font-size: 64px;
+  }
+
+  &.round {
+    font-family: 'Material Icons Round';
+  }
+
+  &.regular {
+    font-family: 'Material Icons';
+  }
+
+  &.outlined {
+    font-family: 'Material Icons Outlined';
+  }
+
+  &.sharp {
+    font-family: 'Material Icons Sharp';
+  }
+
+  &.two-tone {
+    font-family: 'Material Icons Two Tone';
+  }
+
+  &.info {
+    color: $info-blue;
+  }
+
+  &.error {
+    color: $error-red;
+  }
+
+  &.warning {
+    color: $warning-yellow;
+  }
+
+  &:hover {
+    color: $light-coral-black-50;
+  }
+
+  &[disabled] {
+    pointer-events: none;
+  }
+}
+
+// #endregion
+
+.notification-area {
+  position      : fixed;
+  display       : flex;
+  flex-direction: column;
+  align-items   : flex-end;
+  right         : $lg-white-space;
+  bottom        : $lg-white-space;
+  z-index       : 100000;
+  @include relative-child-margin($lg-white-space, -bottom);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity $duration-30, transform $duration-30;
+}
+
+.page-enter,
+.page-leave-active {
+  transform: scale(0.95);
+  opacity  : 0;
+}

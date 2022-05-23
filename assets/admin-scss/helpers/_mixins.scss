@@ -1,0 +1,37 @@
+@mixin relative-self-margin($value: 5px, $direction: "") {
+  $child-selector: "last-child" !default;
+
+  @if($direction=="-top") {
+    $child-selector: "first-child";
+  }
+
+  @else if ($direction=="-left") {
+    $child-selector: "first-child";
+  }
+
+  margin#{$direction}: $value;
+
+  &:#{$child-selector} {
+    margin#{$direction}: unset;
+  }
+}
+
+@mixin relative-child-margin($value: 5px, $direction: "") {
+  $child-selector: "last-child" !default;
+
+  @if($direction=="-top") {
+    $child-selector: "first-child";
+  }
+
+  @else if ($direction=="-left") {
+    $child-selector: "first-child";
+  }
+
+  >* {
+    margin#{$direction}: $value;
+
+    &:#{$child-selector} {
+      margin#{$direction}: unset;
+    }
+  }
+}
